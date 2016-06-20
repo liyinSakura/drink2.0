@@ -1,0 +1,1394 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #323232;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+a {
+    text-decoration: none!important;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+ul {
+    padding: 0;
+}
+select {border: solid 1px #000; appearance:none; -moz-appearance:none; -webkit-appearance:none;background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent; }
+
+/*6-14added*/
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 30px;
+    }
+}
+ 
+@media screen and (min-width: 360px) {
+    html {
+        font-size: 33px;
+    }
+}
+ 
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 37px;
+    }
+}
+ 
+@media screen and (min-width: 440px) {
+    html {
+        font-size: 41px;
+    }
+}
+ 
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 44px;
+    }
+}
+
+/**
+ * 2016-01-13 订正
+ * 做适当限制
+ * 大于640的屏幕 固定为100px
+ * 同时需要对body或者最外层wrapper做max-width: 640px的限制
+ */
+/*
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+html {
+    font-size: 15.625vw;
+}
+*/
+
+html {
+font-size: -webkit-calc(100vw/10.8);
+font-size: calc(100vw/10.8);
+}
+
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 60px;
+    }
+}
+* {outline:none; 
+   /* 防止点击闪烁 */
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    /* 缩放网页，文字大小不变 */
+    -webkit-text-size-adjust:none;}
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+;
+}
+
+ol,ul {list-style: none;}
+.container {
+    padding: 0;
+}
+html {
+font-size: -webkit-calc(100vw/10.8);
+font-size: calc(100vw/10.8);
+}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.clearfix{display:inline-block;}
+html[xmlns] .clearfix{display:block;}
+* html .clearfix{height:1%;}
+p {
+    margin: 0;
+}
+.clearfix{*zoom: 1;}
+.clearfix:after{clear:both;display:table;content:"";}
+
+.clearfix{overflow:hidden;_zoom:1;}
+
+#dl {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/denglubeijing.jpg);
+    background-size: 100% 100%;
+    background-size: 100vw 100vh;
+
+}
+.slogan {
+    margin-top: 3.5rem;
+    color: #fff;
+    text-align: center;
+}
+.slogan img {
+	margin: 0 auto;
+	height: 3rem;
+}
+.slogan h2  {
+    font-size: .66rem;
+}
+ .slogan span{
+    font-size: .56rem;
+    display: block;
+}
+#dl .slogan button {
+    background: #2691fc;
+   width: 100%;
+    height: 1.55rem;
+    line-height: 1.35rem;
+    /*text-align: center;*/
+    /*border:0;*/
+    margin-top: 1.4rem; 
+    font-size: .5rem;
+    /*border-radius: 5px;*/
+}
+#dl span.regist {
+    position: absolute;
+    bottom: .7rem;
+    padding: 0 .2rem;
+    font-size: .46rem;
+    color: #2691fc;
+    border-bottom: 2px solid;
+    left: 40%;
+}
+#loginbtn {
+	width: 100%;
+	background: #2691fc;
+	height: 1.33rem;
+	font-size: .5rem;
+}
+
+.wine-nav {
+    background: url(../img/top_title_bg.png) repeat-y;
+    background-size: 100% 1.9rem;
+    background-size: 100vw 1.9rem;
+    width: 100%;
+    width: 100vw;
+    position: relative;
+}
+.nav-top {
+    height:1.9rem;
+}
+.return {
+    float: left;
+    margin-left: .5rem;
+    margin-top: .3rem;
+    margin-right: .6rem;
+}
+.return img {
+    float: left;
+    top: .3rem;
+    width: .56rem;
+    height: .93rem;
+}
+#search-box {
+    float: left;
+    margin-top: .3rem;
+}
+input.search {
+    display: inline-block;
+    background: transparent;
+    border-radius: 10px;
+    color: #fff;
+    border:2px solid #2690fb;
+    width: 7rem;
+    height: 1.1rem;
+    padding-left: .2rem;
+}
+input.search-btn {
+    position: absolute;
+    background: url(../img/sousuo.png) no-repeat center;
+    right: .45rem;
+    top: .33rem;
+    border:0;
+    width: 1rem;
+    height: 1rem;
+    background-size: 1rem 1rem;
+}
+.nav-tabs {
+    border:0;
+    text-align: center;
+    padding-left: .1rem;
+    margin: .2rem 0;
+    display: -webkit-box;
+ 
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border: 1px solid #eee;
+    background: #eee;
+}
+.nav-tabs>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    width: 5.25rem;
+    height: 1.2rem;
+    color: #1c1c1c;
+    background: #fff;
+    border: 1px solid #eee;
+}
+.nav-tabs1>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    width: 3.5rem;
+    height: 1.2rem;
+    color: #1c1c1c;
+    background: #fff;
+    border: 1px solid #eee;
+}
+.nav-tabs2>li>a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    width: 2.6rem;
+    height: 1.2rem;
+    color: #1c1c1c;
+    background: #fff;
+    border: 1px solid #eee;
+}
+.w {margin: 0 auto;clear:both;border:0px solid red;padding: 0 .3rem;}
+.propic {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: .1rem;
+    float: left;
+    margin-right: .2rem;
+}
+.pro-display {
+    padding: 0;
+}
+.pro-display li {
+    position: relative;
+    height: 3.55rem;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    margin-bottom: .2rem;
+}
+.pro-display h3 {
+    color: #323232;
+    font-size: .44rem;
+}
+a.addcart {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right:0;
+    background: url(../img/cart.png) no-repeat center top;
+    width: .85rem;
+    height: .8rem;
+    background-size: .85rem .8rem;
+}
+.prodetail,.prodetail1 {
+    position: relative;
+    float: left;
+    width: 6.7rem;
+}
+.prodetail button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.prodetail p {
+    font-size: .4rem;
+    color: #323232;
+}
+.see-more {
+    text-align: center;
+    width: 100%;
+    font-size: .4rem;
+}
+/*关于我们*/
+.wine-nav h2 {
+    width: 8rem; height: 1.56rem;
+    position: absolute; left: 0; top: 0; right: 0; bottom: 0;
+    margin: auto;  
+    color: #2084e7;
+    text-align: center;
+    line-height: 1.3rem;
+
+}
+.about-wrap {
+    border: 1px solid ;
+    color: #333;
+    border-radius: 20px;
+    margin: .9rem .8rem;
+}
+.about-con {
+    padding: .1rem;
+    font-size: .48rem;
+}
+/*我的积分*/
+.integral-wrap {
+    border: 2px solid #2791fc;
+    background: #cae4ff;
+    border-radius: 20px;
+    margin: .65rem .45rem;
+}
+.integral-wrap h3 {
+    font-size: .54rem;
+    color: #333;
+}
+.integral {
+    color: #2691fc;
+    font-size: .52rem;
+    width: 100%;
+    text-align: center;
+    margin: .75rem auto;
+}
+.integral p {
+    color: #8a8a8a;
+    font-size: .44rem;
+}
+/*反馈意见*/
+.feedback {
+    margin-top: .9rem;
+    border-color: #333;
+}
+.submit-btn {
+    border: 0;
+    background: #efefef;
+    margin: .2rem auto;
+    height: 1.6rem;
+    width: 100%;
+    font-size: .54rem;
+}
+.prodetail1 span {
+    color: #2691fc;
+    font-size: .46rem;
+    line-height: 1rem;
+}
+.prodetail1 p {
+    color: #6f6f6f;
+    font-size: .4rem;
+}
+/*修改密码*/
+.pwd-wrap {
+    padding: .7rem .45rem;
+}
+
+.pwd-wrap .list-group-item {
+    border-color: #2691fc;
+    width: 100%;
+    height: 1.45rem;
+}
+.change-btn {
+    width: 100%;
+    background: #2792fd;
+    color: #fff;
+    height: 1.6rem;
+    font-size: .54rem;
+    margin: 1rem 0;
+}
+
+/*主菜单*/
+#main-menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+#index {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background: url(../img/bg.png) repeat-y;
+    background-size: 100% 100%;
+    background-size: 100vw 100vh;
+}
+#menubg {
+    position: absolute;
+    z-index: -1;
+} 
+#menuul {
+    position: absolute;
+    z-index: 1;
+    top: 2.7rem;
+    left: 1rem;
+}
+#menuul h3 {
+    font-size: .56rem;
+    font-weight: bold;
+    color: #1c78d4;
+    margin-bottom: 1rem;
+}
+#menuul ul {
+    padding: 0;
+}
+#menuul li {
+    position: relative;
+    font-size: .54rem;
+    color: #fff;
+    padding-left: 1rem;
+    margin-bottom: .6rem;
+}
+#menuul img {
+    position: absolute;
+    left: 0;
+    width: .95rem;
+    height: .85rem;
+
+}
+#menuul p {
+    line-height: 1.2rem;
+}
+#indexbg {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+} 
+.index-top {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 1.2rem;
+    z-index: 3;
+    padding-top: .3rem; 
+}
+#menu-btn {
+    width: .85rem;
+    height: .75rem;
+    margin: 0 .3rem;
+    float: left;
+
+}
+.search-wrap {
+    width: 7.5rem;
+    height: .75rem;
+    background: url(../img/searchb.png) no-repeat center bottom;
+    background-size: 7.5rem .2rem;
+    float: left;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+.scanning {
+    float: right;
+    font-size: .54rem;
+    color: #fff;
+}
+.searchtxt {
+    width: 7.5rem;
+    height: .7rem;
+    background: transparent;
+    border: 0;
+    color: #fff;
+}
+input.search-btn1 {
+    position: absolute;
+    background: url(../img/searchbtn.png) no-repeat center;
+    right: 0;
+    top: 0;
+    border:0;
+    width: .7rem;
+    height: .7rem;
+    background-size: .5rem .5rem;
+}
+.slogan1 {
+    background: url(../img/beizi.png) no-repeat center top;
+    background-size: 1.8rem 2.8rem;
+    width: 9.62rem; height: 10rem;
+    position: absolute; left: 0; top: 0; right: 0; bottom: 0;
+    margin: auto;  
+    padding-top: 3rem;
+    z-index: 3;
+    text-align: center;
+    color: #fff;
+ }
+.indexmenu {
+    margin-top: .5rem;   
+}
+.indexmenu ul {
+   
+}
+.indexmenu li {
+    float: left;
+    width: 40%;
+    color: #a6c9d5;
+    font-size: .6rem;
+    height: 1.25rem;
+    margin-bottom: 1rem;
+    margin-right: .9rem;
+}
+.indexmenu img {
+    width: 1.25rem;
+    float: left;
+}
+.indexmenu li p {
+    line-height: 1.25rem;
+}
+/*我的*/
+.nav-top1,.nav-top2 {
+    position: relative;
+    width: 100vw;
+    min-height:6rem;height:auto !important;height:6rem;overflow:visible;
+}
+.nav-top1 {
+    background: url(../img/bg.png) no-repeat center;
+    background-size: 100% 100vh;
+}
+.nav-top2 {
+    background: url(../img/top_index.png) repeat-y center;
+    background-size: 100% 6rem;
+}
+.set {
+    float: right;
+    margin-top: .3rem;
+    margin-right: .5rem;
+}
+#save {
+    float: right;
+    margin-top: .6rem;
+    margin-right: .5rem;
+    font-size: .5rem;
+    color: #1e74ca;
+}
+.set img {
+    float: right;
+    top: .3rem;
+    width: .8rem;
+    height: .8rem;
+}
+ .txwarp {
+    margin: .2rem;
+    padding-bottom: .2rem;
+    height: 2.45rem;
+    float: left;
+} 
+.txwarp img {
+    width: 2.45rem;
+    height: 2.45rem;
+    border-radius: 50%;
+    border: 2px solid #63a8ee;
+    float: left;
+}
+.userwrap {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.nav-top1 p {
+    color: #fff;
+    display: inline-block;
+    line-height: 2.45rem;
+}
+.nav-top2 p {
+    color: #000;
+}
+.nav-top1 p,.nav-top2 p {
+    font-size: .4rem;
+}
+.nav-top1 .edit {
+    width: .8rem;
+    height: .8rem;
+    margin-top: -.2rem;
+}
+.my-wrap .list-group-item {
+    border-radius: 0;
+    padding: .4rem;
+    line-height: .9rem;
+}
+.my-wrap .list-group-item img {
+    float: left;
+    margin-right: .2rem;
+    width: .8rem;
+    height: .8rem;
+}
+/*设置页面*/
+.set-wrap {
+    background: url(../img/bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.set-wrap .list-group-item img {
+    float: left;
+    margin-right: .2rem;
+    width: .8rem;
+    height: .8rem;
+}
+.set-wrap .list-group-item {
+    background: transparent;
+    border: 0;
+    padding: .4rem;
+    line-height: .9rem;
+}
+.set-wrap .wine-nav {
+    background: transparent;
+}
+#logout {
+    background: transparent;
+    color: #2691fc;
+    border: 1px solid #2691fc;
+    width: 70%;
+    margin-left: 1rem;
+}
+.cover {
+    height: 9rem;
+    width: 100vw;
+}
+.baricon {
+    height: 1rem;
+    padding: .2rem;
+    float: left;
+}
+.baricon img {
+    width: .8rem;
+    height: .8rem;
+    display: inline-block;
+}
+.barwrap .list-group-item {
+    border: 0;
+}
+.barbtn {
+    width: 48%;
+    height: 1.4rem;
+    border: 0;
+    line-height: 1.2rem;
+    background: #2791fc;
+    text-align: center;
+    position: relative;
+}
+.barbtn img {
+    width: .72rem;
+    height: .65rem;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+.barbtn p {
+    position: absolute;
+    left: 55%;
+    top: 20%;
+}
+/*我的订单*/
+.order-display {
+    margin-top: .2rem;
+    padding: 0;
+}
+.order-display li {
+    height: 4rem;
+    border: 1px solid #eee;
+    background: #eee;
+    margin-bottom: .4rem;
+}
+.order-display .ordernum {
+    display: inline-block;
+    color: #666;
+}
+.statuswrap {
+    padding: .2rem;
+    padding-bottom: 0;
+}
+.statuswrap .status {
+    float: right;
+    color: #1e74ca;
+}
+.order-display .detail {
+    padding: .15rem .2rem;
+    background: #fff;
+    height: 2rem;
+    position: relative;
+}
+.order-display .detail img {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: .2rem;
+    float: left;
+}
+.order-display .proname {
+    font-size: .36rem;
+    color:#4ea4f9;
+}
+.order-display .price {
+    font-size: .28rem;
+    color: #666;
+}
+.order-display .date {
+    position: absolute;
+    font-size: .2rem;
+    bottom: .15rem;
+    right: .2rem;
+}
+.order-display .operate {
+    float: right;
+    margin-top: .1rem;
+    margin-right: .1rem;
+}
+.orderbtn {
+    /* width: .95rem;
+    height: .6rem;
+    padding: 0;
+    font-size: .26rem; */
+    background: #2691fc;
+    border: 0;
+    line-height: .6rem;
+}
+/*社区*/
+.nav-top2 .detail {
+    float: left;
+    margin-top: 0.6rem;
+}
+.sex img {
+    width: .4rem;
+    height: .4rem;
+    display: inline-block;
+}
+ .txwarp1 {
+    margin: .2rem;
+    padding-bottom: .2rem;
+    height: 1.8rem;
+    float: left;
+} 
+.txwarp1 img {
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    border: 0px solid #63a8ee;
+    float: left;
+}
+.com-head .peoname {
+    font-size: .48rem;
+}
+.com-head .date {
+    font-size: .32rem;
+}
+.com-head .detail {
+    float: left;
+    margin-top: .4rem;
+}
+.com-head {
+    position: relative;
+    height: 2.2rem;
+}
+.attentionwrap {
+    position: absolute;
+    right: 0;
+    width: 1.4rem;
+    height: 1.15rem;
+    bottom: .3rem;
+}
+.addatt {
+    background: url(../img/add_attention.png) no-repeat;
+    background-size: 1.4rem 1.15rem;
+}
+.attnone {
+    background: url(../img/attentioned.png) no-repeat;
+    background-size: 1.4rem 1.15rem;
+}
+.com-detail {
+    padding-top: .2rem;
+    border: 0px solid #000;
+    margin-bottom: .2rem;
+}
+.default-content {
+    word-wrap: break-word;
+    line-height: .6rem;
+}
+.com-footer .share,
+.com-footer .like,
+.com-footer .commit {
+    display: inline-block;
+    width: .73rem;
+    height: .65rem;
+    margin-right: .2rem;
+}
+.com-footer .share {
+    background: url(../img/share.png) no-repeat center;
+    background-size: .73rem .65rem;
+}
+.com-footer .like {
+    background: url(../img/like.png) no-repeat center;
+    background-size: .73rem .65rem;
+    float: right;
+
+}
+.com-footer .commit {
+    float: right;
+    background: url(../img/commit.png) no-repeat center;
+    background-size: .73rem .65rem;
+}
+.likewrap li {
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .1rem;
+}
+.likewrap li img {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+}
+.commitlist .list-group-item {
+    border: 0;
+    padding: 0;
+    margin-bottom: .1rem;
+}
+.commitlist .comname {
+    display: inline-block;
+    color: #2691fc;
+    line-height: .1rem;
+}
+.comlist {
+    margin-bottom: .4rem;
+}
+/*产品详情页面*/
+.wine-detail-top {
+    height: .1.5rem;
+    background: #eee;
+    padding: .45rem .4rem;
+    margin-bottom: .4rem;
+}
+.wine-detail-top .price {
+    font-size: .4rem;
+    display: inline-block;
+    color: #2691fc;
+    line-height: .1rem;
+}
+.wine-detail-top .collect {
+    float: right;
+    width: .8rem;
+    height: .65rem;
+}
+.property h3 {
+    font-size: .5rem;
+    color: #2691fc;
+}
+.property .list-group-item {
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+}
+.property .list-group-item i {
+    font-size: 0;
+    display: inline-block;
+    height: .2rem;
+    width: .2rem;
+    background: #2691fc;
+    border-radius: 50%;
+    margin-right: .3rem;
+}
+.property .list-group-item span {
+    margin-right: .5rem;
+}
+.property .explanation {
+    font-size: .42rem;
+    color: #a0a0a0;
+    min-height:1.3rem;height:auto !important;height:1.3rem;overflow:visible;
+    border-bottom: 1px solid #eee;
+}
+.user-rating .list-group-item {
+    border-top:0;
+    border-right: 0;
+    border-left: 0;
+    color: #666;
+}
+.user-rating  .star {
+    float: right;
+    display: inline-block;
+}
+.user-rating .star i {
+    background: url(../img/start_ss.png) no-repeat center;
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    background-size: .4rem;
+}
+/*编辑个人信息*/
+.edittx-wrap {
+    background: #eee;
+    height: 4.5rem;
+    text-align: center;
+    position: relative;
+}
+.edittx-wrap img {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    margin: auto;
+    width: 2.15rem;
+    height: 2.15rem;  
+}
+.edit .list-group-item {
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+    padding: 0;
+    border-left: 0;
+    border-right: 0;
+    min-height:1.8rem;height:auto !important;height:1.8rem;overflow:visible;
+}
+.edit .list-group-item p {
+    float: left;
+    padding-top: .6rem;
+}
+.edit .list-group-item .signature,
+.edit .list-group-item .nikename,
+.edit .list-group-item .sexbox {
+    display: inline-block;
+    width: 90%;
+}
+.edit .list-group-item .nikename,
+.edit .list-group-item .sexbox {
+    margin-top: .4rem;
+}
+.edit .list-group-item input,
+.edit .list-group-item textarea,
+.edit .list-group-item select {
+    border: 0;
+}
+.edit .list-group-item input:focus,
+.edit .list-group-item textarea:focus,
+.edit .list-group-item select:focus {
+    outline: none;
+    border-color: #cfdc00;
+    box-shadow: 0 0 0px rgba(207, 220, 0, 0.4);
+    border-radius: 0px;
+}
+.edit .list-group-item textarea {
+    float: left;
+    resize: none;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.edit .list-group-item select {
+    appearance:none;
+    background: url(../img/mor.png) no-repeat right center; 
+    background-size: .47rem .83rem;
+} 
+.msg-wrap,.orderwrap {
+    margin-top: .2rem;
+}
+.msg-wrap li img {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    float: left;
+    margin-right: .2rem;
+}
+.msg-wrap li,.orderwrap li {
+    background: #eee;
+    min-height:1.8rem;height:auto !important;height:1.8rem;overflow:visible;
+    border: 0;
+    color: #666;
+    margin-bottom: .2rem!important;
+}
+.msg-wrap p {
+    font-size: .42rem;
+    color: #2691fc;
+}
+.msg-wrap span.time {
+    float: right;
+    color: #666;
+}
+.msg-wrap .content {
+    float: left;
+}
+.orderwrap .list-group-item {
+    min-height:2.7rem;height:auto !important;height:2.7rem;overflow:visible;
+    padding: 0;
+}
+.orderwrap .list-group-item p {
+    line-height: 1.4rem;
+    color: #666;
+    font-size: .44rem;
+}
+.orderwrap .propic {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 10px;
+    margin: .3rem;
+}
+.sumwrap {
+    position: absolute;
+    bottom: .3rem;right: .3rem;
+}
+.orderwrap span.price {
+    line-height: 1rem;
+}
+.orderwrap span.price,
+.sumwrap input,
+.total-price span {
+    color: #3196fb;
+}
+.sumwrap input {
+    width: 1.25rem;
+    height: .8rem;
+    border: 1px #c1c1c1 solid;
+    text-align: center;
+    background: transparent;
+}
+.min img,.add img {
+    width: 1.25rem;
+    height: .8rem;
+    display: inline-block;
+}
+.total-price {
+    text-align: right;
+    padding-right: .3rem;
+    font-size: .52rem;
+}
+.addresswrap {
+    padding: .3rem;
+    border-top: 1px #ddd solid;
+    border-bottom: 1px #ddd solid;
+    min-height:1.4rem;height:auto !important;height:1.4rem;overflow:visible;
+    background: url(../img/mor.png) no-repeat 95% center;
+    background-size: .5rem .77rem;
+    color: #666;
+    margin: .2rem 0;
+}
+.addresswrap img {
+    float: left;
+    width: .65rem;
+    height: .84rem;
+    margin-right: .3rem;
+}
+.addresswrap .phone {
+    float: right;
+    margin-right: 1rem;
+}
+.paywrap li {
+    border: 0;
+    font-size: .45rem;
+    height: 1.8rem;
+    line-height: 1.2rem;
+    color: #666;
+    padding: .3rem;
+    margin-bottom: .6rem!important;
+    background:#eee url(../img/unselected.png) no-repeat 90% center;
+    background-size: .55rem;
+}
+.paywrap li.select {
+    background:#eee url(../img/selected.png) no-repeat 90% center;
+    background-size: .55rem;
+
+}
+.paywrap li img {
+    float: left;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: .3rem;
+}
+.paybtn {
+    height: 1.2rem;
+    line-height: 1rem;
+    width: 100%;
+}
+/*用户信息页*/
+.userinfo {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+.userinfo img.tx {
+    width: 2.15rem;
+    height:2.15rem;
+    border-radius: 50%;
+}
+.userinfo .detail1 {
+    text-align: center;
+    margin-top: .1rem;
+}
+.userinfo .detail1 span {
+    font-size: .32rem;
+}
+.userinfo .detail1 p {
+    font-size: .42rem;
+}
+.loginwrap {
+	margin-top: .4rem;
+}
+.loginwrap .form-control {
+	border-color: #2690fb;
+	border-radius: 0;
+	height:1.33rem;
+}
