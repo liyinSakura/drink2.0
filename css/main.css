@@ -801,12 +801,12 @@ input.search-btn1 {
 }
 .indexmenu li {
     float: left;
-    width: 40%;
+    width: 50%;
     color: #a6c9d5;
     font-size: .6rem;
     height: 1.25rem;
     margin-bottom: 1rem;
-    margin-right: .9rem;
+   
 }
 .indexmenu img {
     width: 1.25rem;
