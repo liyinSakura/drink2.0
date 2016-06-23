@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>去哪喝-酒店页面</title>
+        <title>去哪喝-地址</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="baidu-site-verification" content="OEZqK02MR4" />
@@ -28,66 +28,53 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="container">
-          <!-- 酒店页面 -->
+       <div class="container minheightvh">
+          <!-- 我的地址 -->
           <div class="wine-nav">
               <div class="nav-top">
                   <a href="javascript:history.go(-1);"><div class="return"><img src="img/fanghui.png" alt="返回"></div></a>
-                  <h2>创金音乐吧</h2>
+                  <h2>编辑地址</h2>
+                  <!-- <h2>新建地址</h2> -->
               </div>
           </div>
-          <div class="barwrap">
-            <img src="img/bar.jpg" alt="店铺门面图" class="cover img-responsive">
-            <ul class="list-group">
-               <li class="list-group-item">
-                  <div class="baricon">
-                    <img src="img/address.png" class="img-responsive">
-                  </div>
-                  <span>地址</span>
-                  <p>深圳市龙岗区</p>
-               </li>
-               <li class="list-group-item">
-                  <div class="baricon">
-                    <img src="img/time.png" class="img-responsive">
-                  </div>
-                  <span>营业时间</span>
-                  <p>2.00~22.00</p>
-               </li>
-               <li class="list-group-item">
-                  <div class="baricon">
-                    <img src="img/tel.png" class="img-responsive">
-                  </div>
-                  <span>电话</span>
-                  <p>0755-89506225</p>
-               </li>
-            </ul>
-            <div class="w">
-              <a class="btn btn-primary barbtn" href="#" role="button"><img src="img/xiai.png" class="img-responsive"><p>2</p></a>
-              <a class="btn btn-primary barbtn" href="#" role="button">我想约</a>
-              <div class="style-intro">
-              <ul class="list-group">
-                <li class="list-group-item">
-                  <h3>风格/类型</h3>
-                  <p class="blue-point">音乐清吧</p>
-                  <p class="blue-point">音乐清吧</p>
-                  <p class="blue-point">音乐清吧</p>
-                </li>
-                <div class="line w"></div>
-                <li class="list-group-item">
-                  <h3>酒吧介绍</h3>
-                  <p>商务合作洽谈</p>
-                </li>
-              <a class="btn btn-primary drinkbtn" href="#" role="button">去喝酒</a>
-              </ul>
-                
-              </div>
+         <div class="w addresseditwrap">
+             <form class="form-horizontal" action="navigation.html">
+              
+                 <div class="col-sm-10 formwrap">
+                   <label for="receiver">收货人： </label>
+                   <input type="text" class="" id="receiver">
+                 </div>
+          
+                 <div class="col-sm-10 formwrap">
+                   <label for="contact">联系方式：</label>
+                   <input type="text" class="" id="contact">
+                 </div>
+             
+                 <div class="col-sm-10 formwrap">
+                 <label for="area">所在地区：</label>
+                   <input type="text" class="" id="area">
+                 </label>
+                 </div>
+               
+                 <div class="col-sm-10 formwrap">
+                 <label for="address">详细地址：</label>
+                   <input type="text" class="" id="address">
+                 </div>
+               
+             </form>
+         </div>
+            <div class="w newadd">
+               <a href="address.html" class="btn btn-primary paybtn">
+                   保存
+               </a> 
             </div>
             
-          </div>
-          <!-- 酒店页面 -->
+          
+          <!-- 我的地址 -->
         </div>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
@@ -105,7 +92,6 @@
         <script type="text/javascript">
             var scale = $('body').width() / 1080; 
             $('html').css('font-size', 100 * scale + 'px');
-
         </script>
        
     </body>

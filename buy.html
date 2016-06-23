@@ -58,10 +58,15 @@
               <div class="total-price">
                   合计：<span>100.0</span>
               </div>
-              <a href="addressedit.html"><div class="addresswrap">
+              <a href="address.html"><div class="addresswrap">
                   <img src="img/address_gray.png" class="img-responsive">
-                  <p>张三<span class="phone">1517778888</span></p>
-                  <span class="addressxq">亨业大厦602</span>
+                  <div style="display: none;">
+                    <p>张三<span class="phone">1517778888</span></p>
+                    <span class="addressxq">亨业大厦602</span>
+                  </div>
+                  
+                  <!-- 如果没收货地址 -->
+                  <h3>亲，请先选择收货地址~</h3>
               </div>
               </a>
           </div>
@@ -113,8 +118,49 @@
                     $(this).addClass('select');
               }
               );
+                 //加的效果
+            $("#add").click(function(){
+                var n=$(this).prev().val();
+                var num=parseInt(n)+1;
+                if(num==0){ return;}
+                $(this).prev().val(num);
+                setTotal();
+            });
+            //减的效果
+            $("#min").click(function(){
+                var n=$(this).next().val();
+                var num=parseInt(n)-1;
+                if(num==0){ return}
+                $(this).next().val(num);
+                 setTotal();
+            });
+            function setTotal(){
+              var t =$("#num");
+              var dj =$(".price").val();
+              console.log(dj);
+              if (t.val()=="0") {
+                    t.val("1")
+                    setTotal();
+                  }else{
+                    $(".total-price span").html((parseInt(t.val())*dj));
+                  }
 
-              });
+                  }
+                  $("#num").bind('input propertychange', function() {
+                     setTotal();
+                  })
+                  $("#num").blur(function(){
+                    var t =$("#num");
+                    if (t.val()=="") {
+                    t.val("1")
+                    setTotal();
+                  }
+                  })
+                  setTotal();
+
+                });
+
+             
         </script>
        
     </body>

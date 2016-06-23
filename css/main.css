@@ -672,7 +672,7 @@ a.addcart {
 #main-menu {
     position: absolute;
     width: 100vw;
-    height: 100vh;
+     height: 100vh; 
     overflow: hidden;
     z-index: -1;
     top: 0;
@@ -681,8 +681,8 @@ a.addcart {
 #page {
     position: relative;
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 100vh; 
+    overflow: hidden; 
     z-index: 3;
     top: 0;
     left: 0;
@@ -700,7 +700,7 @@ a.addcart {
     background: url(../img/beijing.jpg) no-repeat;
     background-size: 100% 100%;
     background-size: 100vw 100vh;
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-left: 1rem;
 }
 #menu h3 {
@@ -937,14 +937,15 @@ input.search-btn1 {
 .barwrap .list-group-item {
     border: 0;
 }
-.barbtn {
-    width: 48%;
+.barbtn,.barbtn1 {
+    width: 49%;
     height: 1.4rem;
     border: 0;
     line-height: 1.2rem;
     background: #2791fc;
     text-align: center;
     position: relative;
+    font-size: .45rem;
 }
 .barbtn img {
     width: .72rem;
@@ -953,17 +954,21 @@ input.search-btn1 {
     left: 40%;
     top: 20%;
 }
+.barbtn1 img {
+    width: .72rem;
+    height: .65rem;
+}
 .barbtn p {
     position: absolute;
     left: 55%;
     top: 20%;
 }
 /*我的订单*/
-.order-display {
+.order-display,.addressul {
     margin-top: .2rem;
     padding: 0;
 }
-.order-display li {
+.order-display li,.addressul li {
     height: 4rem;
     border: 1px solid #eee;
     background: #eee;
@@ -1156,7 +1161,8 @@ input.search-btn1 {
     padding-right: 0;
     border: 0;
 }
-.property .list-group-item i {
+
+.property .list-group-item i,.property1 .list-group-item i {
     font-size: 0;
     display: inline-block;
     height: .2rem;
@@ -1367,9 +1373,9 @@ input.search-btn1 {
     height: 1.2rem;
     margin-right: .3rem;
 }
-.paybtn {
+.paybtn,.newadd {
     height: 1.2rem;
-    line-height: 1rem;
+    line-height: .8rem;
     width: 100%;
 }
 /*用户信息页*/
@@ -1404,4 +1410,261 @@ input.search-btn1 {
     border-color: #2690fb;
     border-radius: 0;
     height:1.33rem;
+}
+
+.style-intro li {
+    border: 0;
+}
+.style-intro li h3 {
+    font-size: .54rem;
+    color: #2793fd;
+}
+.style-intro li p {
+    font-size: .4rem;
+    color: #898989;
+}
+.style-intro li p.blue-point {
+   padding-left: .3rem;
+   background: url(../img/point_s.png) no-repeat left center;
+   background-size: 8px 8px;
+}
+.line {
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+}
+.property1 ul {
+    text-align: center;
+}
+.property1 .list-group-item {
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    text-align: left;
+    margin-left: 30%;
+    color: #666;
+    font-size: .54rem;
+}
+.property1 .list-group-item span {
+    text-align: right;
+    margin-left: .4rem;
+}
+.property1 p{
+    display: inline-block;
+    margin-right: .6rem;
+}
+.pro-title,.pro-title1 {
+    /* background: url(../img/redwine_s.png) no-repeat .5rem bottom; */
+    padding-left: 1rem;
+    height: 2rem;
+    margin-top: .2rem;
+}
+.pro-title h3 {
+    color: #2793fd;
+    margin: 0;
+    float: left;
+    line-height: 2rem;
+}
+.pro-title img,.pro-title1 img {
+    float: left;
+}
+.pro-title1 img {
+    margin-right: .5rem;
+}
+.pro-title1 p {
+    line-height: .8rem;
+}
+.pro-title1,.pro-titler {
+    float: left;
+    margin-top: .4rem;
+}
+.pro-title1 .pro-titler span {
+   color: #2793fd;
+}
+.pro-title2 {
+    /* margin: .5rem 0; */
+}
+.pro-title2 h3{
+   color: #2793fd;
+   padding-left: .4rem;
+}
+.alcohol {
+    margin: .6rem 0;
+}
+.alcohol li {
+    float: left;
+    width: 25%;
+    height: 1rem;
+    text-align: center;
+    color: #fff;
+    line-height: 1rem;
+}
+.alcohol li.active {
+    height: 2rem;
+    line-height: 2rem;
+    margin-top: -.4rem;
+}
+.alcohol1 {
+    background: #eee;
+} 
+.alcohol2 {
+    background: #92c8fd;
+} 
+.alcohol3 {
+    background: #2691fc;
+} 
+.alcohol4 {
+    background: #1e74ca;
+} 
+.intro {
+    font-size: .4rem;
+    line-height: .6rem;
+}
+
+/*购物车*/
+.cartwrap {
+    margin-top: .4rem;
+}
+.cartwrap li {
+    border-radius: 0;
+    border-right: 0;
+    border-left: 0;
+    height: 4.8rem;
+    margin-bottom: .4rem;
+    padding: .3rem .3rem .35rem .4rem;
+    position: relative;
+}
+.drinkbtn {
+    width: 100%;
+    height: 1.35rem;
+    line-height: 1.15rem;
+    background: #2793fd;
+    margin: .4rem 0;
+}
+.billing span {
+    margin-right: .5rem;
+    padding-left: 1rem;
+}
+.minheightvh{min-height:100vh;height:auto !important;height:100vh;overflow:visible;}
+.billing {
+    position: absolute;
+    bottom: 0;
+    height: 1rem;
+    line-height: .8rem;
+    background: #eee url(../img/unselected.png) no-repeat left center;
+    background-size: .8rem;
+    width: 100%;
+    padding: .1rem 0;
+}
+.allselect {
+    background: #eee url(../img/selected.png) no-repeat left center;
+    background-size: .8rem;
+}
+.billbtn {
+    height: .8rem;
+    background: #2691fc;
+    border: 0;
+    line-height: .6rem;
+    float: right;
+     margin-right: .1rem; 
+}
+.pro-pic {
+    float: left;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #eee;
+    margin-right: .4rem;
+}
+.cart-con .detail p {
+    font-size: .4rem;
+    color: #666;
+    margin-bottom: .2rem;
+}
+.cart-con .detail p.sum {
+    margin-top: .4rem;
+}
+.cart-con .sum span {
+    float: right;
+    margin-right: .3rem;
+}
+.operating {
+    height: .9rem;
+    line-height: .9rem;
+    background:url(../img/unselected.png) no-repeat left center;
+    background-size: .8rem;
+}
+.oneselect {
+    background:  url(../img/selected.png) no-repeat left center;
+    background-size: .8rem;
+}
+.operating span {
+    padding-left: 1rem;
+    color: #2793fd;
+    font-size: .5rem;
+}
+.operatingwrap {
+    position: absolute;
+    z-index: 100;
+    right: .3rem;
+    top: .3rem;
+    width: 1.5rem;
+    text-align: center;
+    /* margin-right: .2rem; */
+}
+.operatingwrap .min,
+.operatingwrap .add,
+.operatingwrap .num,
+.operatingwrap .min img,
+.operatingwrap .add img {
+    width: 1rem;
+    height: .73rem;
+}
+.operatingwrap .num {
+    border: 1px solid #2691fc;
+    text-align: center;
+}
+.addresswrap h3 {
+    margin: 0;
+}
+.addresseditwrap {
+    margin-top: .4rem;
+}
+.addresseditwrap label {
+    float: left;
+    font-size: .42rem;
+    color: #323232;
+    font-weight: normal;
+}
+.addresseditwrap input {
+    float: left;
+    margin-top: .6rem;
+    background: #e9f4ff;
+    height: .6rem;
+    border: 0;
+}
+.addresseditwrap .formwrap {
+    background: #e9f4ff;
+    margin-bottom: .65rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+}
+.newadd {
+    position: absolute;
+    bottom: .2rem;
+    height: 1.5rem;
+    line-height: .8rem;
+}
+.addressul li{
+    padding: .2rem ;
+}
+.addressul p{
+    color: #49a3fc;
+    font-size: .36rem;
+}
+.addressul span{
+    color: #49a3fc;
+    font-size: .52rem;
+    margin-right: .4rem;
+}
+.addressul .detail {
+    margin-top: .4rem;
 }
