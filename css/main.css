@@ -462,9 +462,9 @@ input:focus {
 }
 .return img {
     float: left;
-    top: .3rem;
-    width: .56rem;
-    height: .93rem;
+    margin-top: .1rem;
+    width: .5rem;
+    height: .9rem;
 }
 #search-box {
     float: left;
@@ -587,13 +587,13 @@ a.addcart {
 }
 /*关于我们*/
 .wine-nav h2 {
-    width: 8rem; height: 1.56rem;
+    width: 8rem; 
     position: absolute; left: 0; top: 0; right: 0; bottom: 0;
     margin: auto;  
     color: #2084e7;
     text-align: center;
-    line-height: 1.3rem;
-
+    line-height: 1.9rem;
+    font-size: .6rem;
 }
 .about-wrap {
     border: 1px solid ;
@@ -1624,6 +1624,7 @@ input.search-btn1 {
 }
 .addresswrap h3 {
     margin: 0;
+    font-size: .6rem;
 }
 .addresseditwrap {
     margin-top: .4rem;
