@@ -1636,11 +1636,10 @@ input.search-btn1 {
     font-weight: normal;
 }
 .addresseditwrap input {
-    float: left;
-    margin-top: .6rem;
-    /* // background: #e9f4ff; */
+    /* float: left; */
+     background: #e9f4ff; 
     height: .6rem;
-    border: 0;
+    border: 1;
     color: #666;
 }
 .addresseditwrap .formwrap {
