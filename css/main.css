@@ -1634,16 +1634,17 @@ input.search-btn1 {
     font-size: .42rem;
     color: #323232;
     font-weight: normal;
-    width: 30%;
+    width: 25%;
 }
 .addresseditwrap input {
-   float: left;
-     background: #e9f4ff; 
-    height: .6rem;
-    line-height: .6rem;
-    border: 1px solid red;
+    float: left;
+    background: #e9f4ff; 
+    height: .8rem;
+    line-height: .8rem;
+    border:0px solid red;
     color: #666;
-    width: 60%;margin-top:.6rem;
+    width: 60%;
+    margin-top:.5rem;
 }
 .addresseditwrap .formwrap {
     background: #e9f4ff;
