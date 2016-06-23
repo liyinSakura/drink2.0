@@ -1638,7 +1638,7 @@ input.search-btn1 {
 .addresseditwrap input {
     float: left;
     margin-top: .6rem;
-    background: #e9f4ff;
+    /* // background: #e9f4ff; */
     height: .6rem;
     border: 0;
     color: #666;
@@ -1670,3 +1670,6 @@ input.search-btn1 {
 .addressul .detail {
     margin-top: .4rem;
 }
+.addresseditwrap input::-moz-placeholder { color: #369; }
+.addresseditwrap input::-webkit-input-placeholder { color:#369; }
+.addresseditwrap input:-ms-input-placeholder { color:#369; }
